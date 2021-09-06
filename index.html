@@ -2,6 +2,11 @@
 <html>
 <head>
     <title>Samuel Espinoza</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
 </head>
 <body>
     <h1>Samuel Espinoza </h1>
@@ -25,14 +30,60 @@
         y whidth="numero de piceles"-->
     <form action="" method="POST">
         <label for="nombre">Nombre</label>
-        <input type="text" id="nombre" name="nombre" placeholder="Nombre"/>
+        <input id="nombre" name="nombre" placeholder="Nombre"/>
         <br>
         <label for="comentario">comentario</label>
         <br>
         <textarea cols="50" rows="10" id="comentario" name="comentario" placeholder="Escriba un comentario..."></textarea>
-        <input type="submit"/>
+        <button type="submit">Enviar</button>
     <!--para que tenga un valor por defecto los cuadrois en input se pone value esta palabra reserbada sirve exepto para
     texaarea para que textarea tenga un valor por defecto se pone en textare-->
     </form>
+
+    <!--ul rd lista no ordenada-->
+    <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+    </ul>
+    <!--ul rd lista  ordenada-->
+    <ol>
+        <li value="50">Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+        <li>Elemento 5</li>
+        <li>
+            <ol>
+                <li style="list-style-type: lower-alpha;">sub elemento 1</li>
+                <li style="list-style-type: lower-alpha;">sub elemento 2</li>
+                <li style="list-style-type: lower-alpha;">sub elemento 3</li>
+            </ol>
+        </li>
+    </ol>
+
+    <br>
+    <table style="width: 500px ;">
+        <thead>
+            <tr>
+                <th>Precio</th>
+                <th>Producto</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>gratis</td>
+                <td>telefono celular</td>            
+            </tr>
+            <tr>
+                <td>6.99</td>
+                <td>papas de chocolate</td>            
+            </tr>
+        </tbody>
+        <tfoot>
+            <td></td>
+            <td>5Total: 0.99$</td>
+        </tfoot>
+    </table>
 </body>
 </html>
